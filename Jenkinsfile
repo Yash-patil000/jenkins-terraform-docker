@@ -50,7 +50,7 @@ pipeline {
                 sh 'docker logs hello-from-terraform'
             }
         }
-Jenkins + Git + Terraform + Docker — Mini Project Page 6
+//Jenkins + Git + Terraform + Docker — Mini Project Page 6
         stage('Terraform Destroy') {
             when { expression { params.ACTION == 'destroy' } }
             steps {
